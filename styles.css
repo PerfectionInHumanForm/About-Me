@@ -2,22 +2,13 @@
 #landing {
 
   text-align: center;
-    height: 100vh; /* Full viewport height */
+    height: 70vh; /* Full viewport height */
   }
   /* Style for the About Me section */
 #about-me {
     text-align: center;
   }
-  /* Style for the Skills section */
-#skills {
-    text-align: center;
-  }
-  .skill {
-    /* Placeholder style; you can replace this later */
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-  }
+  
   /* Style for the Experience section */
 #experience {
     text-align: center;
@@ -39,25 +30,8 @@
     padding: 10px;
   }
   /* Style for the Portfolio section */
-#portfolio {
-    text-align: center;
-  }
-  .project {
-    /* Placeholder style; you can replace this later */
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-  }
-  /* Style for the Testimonials section */
-#testimonials {
-    text-align: center;
-  }
-  .testimonial {
-    /* Placeholder style; you can replace this later */
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-  }
+
+
   /* Style for the Contact Form section */
 #contact {
     text-align: center;
@@ -136,9 +110,60 @@ body {
 
 /* Add this to your styles.css */
 h1 {
-  font-size: 58px; /* Adjust the size as you see fit */
+  font-size: 65px; /* Adjust the size as you see fit */
   font-weight: bold; /* Makes the text bold */
   text-align: center; /* Centers the text */
   margin-top: 20px; /* Adds some space above your name */
   margin-bottom: 20px; /* Adds some space below your name */
+}
+
+/* Center the iframe containing the PDF */
+#resume-section iframe {
+  display: block;
+  margin: auto;
+}
+
+/* Style the "My Resumé" text */
+#resume-section h2 {
+  color: white; /* Sets the text color to white */
+  text-align: center; /* Centers the text */
+  -webkit-text-stroke: 1px black; /* Adds a black outline */
+}
+
+/* Style the Contact Form section */
+#contact form h2 {
+  font-size: 36px; /* Increases the font size */
+  color: white;  /* Changes the text color to white */
+  text-shadow: 4px 4px 8px black;  /* Adds a shadow for depth */
+}
+
+#contact input, #contact textarea, #contact button {
+  display: block; /* Makes each form element take up the full width */
+  margin: 20px auto; /* Adds margin and centers the elements */
+  padding: 10px; /* Adds padding inside the elements */
+  width: 80%; /* Sets the width */
+}
+
+#contact button {
+  background-color: #4db7d1; /* Sets the background color of the button */
+  color: white; /* Sets the text color to white */
+  cursor: pointer; /* Changes the cursor to a hand when hovering */
+}
+
+/* Style the Bio title */
+#bio h2 {
+  font-size: 36px;  /* Increases the font size */
+  text-align: center;  /* Centers the text */
+  margin-bottom: 20px;  /* Adds some space below the title */
+  color: white;  /* Changes the text color to white */
+  text-shadow: 2px 2px 4px black;  /* Adds a shadow for depth */
+}
+
+/* Style the Bio section */
+#bio {
+   color: white;  /* Changes the text color to white */
+  text-shadow: 4px 4px 8px black;  /* Adds a shadow for depth */
+  border: 10px solid white;  /* Adds a white border */
+  padding: 20px;  /* Adds some padding inside the border */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  /* Adds a shadow for depth */
 }
