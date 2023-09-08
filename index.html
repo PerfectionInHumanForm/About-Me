@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Web Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add this inside the <head> tag -->
+<script>
+    // Function to toggle job details
+    function toggleJobDetails(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+  <!-- Add this inside the <head> tag -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Add this inside the <head> tag -->
+  <script>
+    // Function to add sparkle effect
+    function addSparkle(event) {
+      const sparkle = document.createElement('span');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = `${event.clientX}px`;
+      sparkle.style.top = `${event.clientY}px`;
+      document.body.appendChild(sparkle);
+      setTimeout(() => {
+        sparkle.remove();
+      }, 1000);
+    }
+  </script>
+  
+</head>
+<body>
+  <!-- Add this inside the <body> tag -->
+<section id="landing">
+    <div class="background-image"></div>
+    <h1 class="outlined-text">Your Name</h1>
+
+        <!-- Wrap your tagline with this class -->
+<h2 class="tagline">Where Technology Meets Creativity: Innovating for a Better Tomorrow.</h2>
+    <div class="scroll-down-indicator"></div>
+  </section>
+<!-- Add this between any two sections -->
+<hr>
+  <!-- Add this below the landing section -->
+<section id="about-me" alt="About Me">
+    <img src="My_Award_2.jpg" alt="HI ^_^"> <!-- Replace with your photo -->
+    <p>Your Short Bio</p>
+    <!-- Add clickable icons for email, LinkedIn, GitHub -->
+  </section>
+
+
+<!-- Add this below the About Me section -->
+<section id="skills">
+    <!-- Placeholder for interactive skill bars or pie charts -->
+    <!-- Modify the Skills section -->
+    <div class="skill"><i class="fas fa-code"></i> Python</div>
+    <div class="skill">Teamwork</div>
+    <!-- Add more skills here -->
+  </section>
+
+  <!-- Add this below the Skills section -->
+
+  <section id="experience">
+    <div class="job" onclick="toggleJobDetails('job1-details'); addSparkle(event);">
+      Software Developer at XYZ Corp
+    </div>
+    <div id="job1-details" class="job-details" style="display:none;">
+      Details about this job
+    </div>
+    <!-- Add more jobs here -->
+  </section>
+  
+  </section>
+  <!-- Add this below the Experience section -->
+<section id="education">
+    <!-- Placeholder for educational details -->
+    <div class="degree">Bachelor's in Computer Science</div>
+    <div class="degree">Certification in Web Development</div>
+    <!-- Add more degrees or certifications here -->
+  </section>
+  <!-- Add this below the Education section -->
+<section id="portfolio">
+    <!-- Placeholder for portfolio projects -->
+    <div class="project">Project 1</div>
+    <div class="project">Project 2</div>
+    <!-- Add more projects here -->
+  </section>
+  <!-- Add this below the Portfolio section -->
+<section id="testimonials">
+    <!-- Placeholder for testimonials -->
+    <div class="testimonial">"Great team player!" - Manager</div>
+    <div class="testimonial">"Excellent coder!" - Colleague</div>
+    <!-- Add more testimonials here -->
+  </section>
+
+  <!-- Add this below the Testimonials section -->
+  <!-- Modify the Contact Form section -->
+<section id="contact">
+    <form action="https://formspree.io/your-email" method="POST">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="_replyto" placeholder="Your Email">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  
+<section id="contact">
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Add this below the Contact Form section -->
+<footer>
+    <!-- Placeholder for social media links and downloadable PDF resume -->
+    <a href="your-linkedin-url">LinkedIn</a>
+    <a href="your-github-url">GitHub</a>
+    <a href="your-resume.pdf">Download Resume</a>
+  </footer>
+  
+</body>
+</html>
