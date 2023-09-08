@@ -167,3 +167,29 @@ h1 {
   padding: 20px;  /* Adds some padding inside the border */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  /* Adds a shadow for depth */
 }
+
+/* Mobile Optimization */
+@media only screen and (max-width: 768px) {
+  /* Adjust the font size for smaller screens */
+  body {
+    font-size: 18px;
+  }
+
+  /* Make the bio and contact sections full width */
+  #bio, #contact {
+    width: 100%;
+  }
+
+  /* Adjust the size of the resume PDF viewer */
+  #resume-viewer {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the form input sizes */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+}
